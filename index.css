@@ -3,6 +3,7 @@
 body {
     background-image: url("images/Mordor.webp");
     background-repeat: no-repeat;
+    background-size: cover;
     color: white;
 }
 
@@ -12,7 +13,7 @@ header {
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(25,24,24,0) 100%);
     align-items: center;
-    padding: 12px 48px;
+    padding: 12px 10%;
 }
 
 header h1 {
@@ -25,24 +26,44 @@ h2 {
     text-align: center;
     font-family: 'Tangerine', cursive;
     font-size: 36px;
-    margin: 28px 128px;
+    margin: 28px 12%;
 }
 
 main {
     font-family: 'Goudy Bookletter 1911', serif;
     display: grid;
     grid-template-columns: 3fr 2fr;
+    grid-template-rows: auto;
     column-gap: 36px;
-    margin: 36px 48px;
+    margin: 36px 10%;
 }
 
 footer {
     display: flex;
 }
 
+.content-container {
+    grid-column: 1 / span 1;
+    display: flex;
+    align-items: center;
+}
+
 .content {
     overflow-y: auto;
     background-color: hsla(0, 0%, 30%, 0.5);
+    grid-column: 1 / span 1;
+    padding: 12px;
+    line-height: 1.5;
+}
+
+@media (min-width: 800px) {
+    .content {
+        font-size: 24px;
+    }
+}
+
+.bookcover {
+    grid-column: 2 / span 1;
 }
 
 ::-webkit-scrollbar {
