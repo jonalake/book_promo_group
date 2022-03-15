@@ -2,6 +2,9 @@
 
 body {
     font-family: 'Cinzel', serif;
+    background-image: url("images/Mordor.webp");
+    background-repeat: no-repeat;
+    color: white;
 }
 
 header {
@@ -16,4 +19,23 @@ main {
 
 footer {
     display: flex;
+}
+
+.content {
+    overflow-y: auto;
+    background-color: hsla(0, 0%, 30%, 0.5);
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+header a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    padding: 10px 30px;
+    border: 1px solid hsl(0, 0%, 100%);
 }
