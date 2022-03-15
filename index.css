@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+body {
+    font-family: 'Cinzel', serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2;
+}
+
+footer {
+    display: flex;
+}
