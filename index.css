@@ -13,7 +13,7 @@ header {
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(25,24,24,0) 100%);
     align-items: center;
-    padding: 12px 10%;
+    padding: 18px 10%;
 }
 
 header h1 {
@@ -28,6 +28,8 @@ h2 {
     font-size: 36px;
     margin: 28px 12%;
 }
+
+
 
 main {
     font-family: 'Goudy Bookletter 1911', serif;
@@ -49,16 +51,37 @@ footer {
 }
 
 .content {
-    overflow-y: auto;
     background-color: hsla(0, 0%, 30%, 0.5);
     grid-column: 1 / span 1;
-    padding: 12px;
+    padding: 36px;
     line-height: 1.5;
+    font-size: 20px;
 }
 
-@media (min-width: 800px) {
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 8px;
+}
+
+@media (min-width: 900px) {
     .content {
         font-size: 24px;
+        padding: 64px;
+    }
+
+    header {
+        padding: 18px 10%;
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 28px;
+        font-weight: 600;
+        padding-bottom: 8px;
     }
 }
 
